@@ -138,6 +138,12 @@ img {
 }
 
 /* header.index */
+.headerContanier {
+  background-color: #fff;
+  max-width: 996px;
+  margin: 0 auto;
+  padding: auto;
+}
 nav {
   position: fixed;
   top: 0;
@@ -195,8 +201,8 @@ h1 img {
 /* index */
 .indexContainer {
   max-width: 996px;
-  margin: 0;
   padding-bottom: 24px;
+  margin: 0 auto;
   /* background-image: url(./img/banner2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -319,6 +325,7 @@ footer {
   padding-top: 18px;
   padding-bottom: 18px;
 }
+
 .socialIcons {
   display: flex;
   justify-content: center;
