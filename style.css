@@ -196,7 +196,6 @@ h1 img {
 .indexContainer {
   max-width: 996px;
   margin: 0;
-  text-align: center;
   padding-bottom: 24px;
   /* background-image: url(./img/banner2.png);
   background-repeat: no-repeat;
@@ -209,6 +208,14 @@ h1 img {
 .indexContainer a:hover {
   color: #5a005a;
   text-decoration: none;
+}
+.navi-lists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navi-lists li {
+  padding-bottom: 8px;
 }
 /* project */
 .projectsContainer {
