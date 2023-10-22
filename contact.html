@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>contact us form</title>
+  </head>
+  <body>
+    <iframe
+      src="header.html"
+      frameborder="0"
+      width="100%"
+      height="100%"
+    ></iframe>
+    <div class="contactContainer">
+      <h2>Contact us Form</h2>
+
+      <form
+        class="my-form"
+        id="contact-form"
+        action="submit_form.php"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <iframe
+      src="footer.html"
+      frameborder="0"
+      width="100%"
+      height="100%"
+    ></iframe>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      // JavaScript form validation
+      const form = document.getElementById("contact-form");
+      const emailInput = document.getElementById("email");
+
+      form.addEventListener("submit", function (event) {
+        let valid = true;
+
+        if (!emailInput.checkValidity()) {
+          alert("please enter a valid email");
+          valid = false;
+        }
+
+        if (!valid) {
+          event.preventDefault(); // prevent the form from submitting
+        }
+      });
+    </script>
+  </body>
+</html>

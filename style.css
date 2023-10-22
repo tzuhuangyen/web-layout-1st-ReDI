@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css */
+.container {
+  max-width: 1200px;
+  margin: 0;
+}
+img {
+  vertical-align: bottom;
+}
+
+/* header.index */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+h1 a {
+  font: 36px;
+  color: #8d76a8;
+}
+.navbar a:hover {
+  color: #5a005a;
+  text-decoration: none;
+}
+h1 img {
+  height: 42px;
+  border-radius: 50%;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    justify-content: end;
+  }
+}
+
+.navbar {
+  height: auto;
+  /* height: 100vh;  */
+  /* 让导航栏占满整个视窗高度 */
+  overflow-y: hidden; /* 显示滚动条，即使不需要滚动 */
+  align-items: end;
+  margin: 0;
+}
+.nav-item {
+  color: #8d76a8;
+}
+.active {
+  color: #470493;
+}
+.hamburger {
+  display: black;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #5c2ad9;
+  margin: 3px 0;
+  border-radius: 3px;
+}
+
+/* index */
+.indexContainer {
+  max-width: 996px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 24px;
+  /* background-image: url(./img/banner2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+.indexContainer a {
+  color: #8d76a8;
+}
+.indexContainer a:hover {
+  color: #5a005a;
+  text-decoration: none;
+}
+/* project */
+.projectsContainer {
+  max-width: 996px;
+  margin: 0;
+  padding: auto;
+}
+.projectsContainer h3 {
+  color: #8d76a8;
+  padding-bottom: 16px;
+}
+.projectsContainer p {
+  color: #ece3f6;
+}
+.projects row {
+  flex-wrap: nowrap;
+}
+.projects li {
+  padding-bottom: 24px;
+}
+.projects img {
+  width: 250px;
+  height: 180px;
+}
+.projects img:hover {
+  transform: scale(1.2);
+}
+
+/* contact.index  form*/
+
+h2 {
+  text-align: center;
+  color: #800080;
+}
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.my-form input[type="submit"] {
+  float: right;
+}
+
+/* 在视窗宽度大于960px以上时调整表单样式 */
+@media (min-width: 961px) {
+  .my-form {
+    min-width: 650px; /* 设置最小宽度为650px */
+  }
+}
+
+/* 在视窗宽度小于560px时调整表单样式 */
+@media (max-width: 560px) {
+  .my-form {
+    min-width: 320px; /* 设置最小宽度为320px */
+  }
+}
+label {
+  color: #800080; /* 紫色标签 */
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #800080; /* 紫色边框 */
+  border-radius: 4px;
+}
+input[type="submit"] {
+  background-color: #800080; /* 紫色按钮背景 */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #5a005a; /* 紫色按钮背景 - 悬停时 */
+}
+a {
+  color: #800080; /* 紫色链接文本颜色 */
+}
+
+/* skills */
+table th {
+  background-color: #ece3f6;
+}
+
+/* footer.html */
+footer {
+  background-color: #f8f9fa;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+.social-icon {
+  width: 48px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}
+.copyright {
+  text-align: center;
+}
