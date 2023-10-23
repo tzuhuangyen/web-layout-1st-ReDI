@@ -1,0 +1,22 @@
+{
+  "name": "eric-meyer-reset",
+  "version": "2.0.0",
+  "description": "http://meyerweb.com/eric/tools/css/reset/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanni4night/eric-meyer-reset.git"
+  },
+  "keywords": [
+    "cssreset",
+    "reset"
+  ],
+  "author": "http://meyerweb.com/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanni4night/eric-meyer-reset/issues"
+  },
+  "homepage": "https://github.com/yanni4night/eric-meyer-reset#readme"
+}

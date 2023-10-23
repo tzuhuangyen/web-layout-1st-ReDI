@@ -1,162 +1,80 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+/* css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
+ul li {
   list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
+body {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif, "Sometype Mono", monospace;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* css */
 .container {
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 img {
-  vertical-align: bottom;
+  max-width: 100%;
+  /* (如果圖片不夠大張 無法撐滿容器就改用width:100%) */
+  height: auto;
+  /* height: 100vh;如果佔滿整個視窗 可使用100vh) */
+  vertical-align: middle;
+  /* 防止照片下方有3px空白 */
+  object-fit: cover;
+  /* 做法：將img改成區塊元素 */
+  /* display: block; */
+  /* 圖片可依造比例縮放 */
+}
+
+ul li a {
+  display: block;
+}
+li a:hover {
+  color: #5a005a;
 }
 
 /* header.index */
-.headerContanier {
-  background-color: #fff;
-  max-width: 996px;
-  margin: 0 auto;
-  padding: auto;
+header {
+  background-color: #f8f9fa;
 }
-nav {
+header .headerContainer {
+  max-width: 1088px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  padding: 24px;
+}
+/* nav {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
-}
-h1 a {
+} */
+.navbar h1 a {
+  display: inline-block;
+  padding: 8px;
   font: 36px;
   color: #8d76a8;
+  text-decoration: none;
 }
+
+h1 img {
+  display: inline-block;
+  height: 42px;
+  border-radius: 50%;
+}
+.navbar li {
+  width: 72px;
+  text-align: center;
+}
+
 .navbar a:hover {
   color: #5a005a;
-  text-decoration: none;
 }
 h1 img {
   height: 42px;
@@ -309,9 +227,6 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   background-color: #5a005a; /* 紫色按钮背景 - 悬停时 */
-}
-a {
-  color: #800080; /* 紫色链接文本颜色 */
 }
 
 /* skills */
